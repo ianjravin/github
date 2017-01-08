@@ -1,0 +1,26 @@
+$yellow : #ffffcc;
+$green : #00CC66;
+
+.box {
+  background: $yellow;
+  border: 5px solid black;
+  padding: 50px 100px;
+  .button {
+    font-weight: bold;
+    text-align: center;
+    background: $green;
+    color: white;
+  }
+}
+
+#user-show {
+  display: none;
+}
+
+#results-show {
+  display: none;
+}
+
+#error-show {
+  display: none;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="build/css/vendor.css">
+    <link rel="stylesheet" href="build/css/styles.css">
+    <script src="build/js/vendor.min.js"></script>
+    <script type="text/javascript" src="build/js/app.js"></script>
+    <title>GitHub User Lookup</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5 col-md-offset-2">
+          <div id="user-lookup">
+            <h1>GitHub User Lookup</h1>
+            <hr>
+            <h3>Find out a GitHub user's public repository</h3>
+              <div class="box">
+                <label for="username">Enter a GitHub username:</label>
+                <input id="username" type="text" placeholder="GitHub Username">
+                <button id="githubUsername" class="btn btn-success">Submit</button>
+                <div class="showUser"></div>
+              </div>
+          </div>
+          <div id="user-show">
+            <p>GitHub profile for <span class="response-login"></span> </p>
+              <div id="response-avatar"></div>
+              <div>Name: <span id="response-name"></span></div>
+              <div>Bio: <span id="response-bio"></span></div>
+              <div>Location: <span id="response-location"></span></div>
+              <div>Number of Repositories: <span id="response-count"></span></div>
+              <div>Followers: <span id="response-followers"></span> vs Following: <span id="response-following"></span></div>
+              <div>GitHub Leadership Score: <span id="response-ratio"></span></div>
+              <hr>
+          </div>
+          <div id="results-show">
+            <p>GitHub Repository for <span class="response-login"></span> (Project Name | Description): <span id="username"></span></p>
+              <ul id="repository-list">
+              </ul>
+          </div>
+          <div id="error-show">
+            <p>Your search resulted in an error: <span id="error-text"></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
